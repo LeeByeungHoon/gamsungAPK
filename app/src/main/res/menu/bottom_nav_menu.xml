@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/home_icon"
         android:title="메인" />
 
     <item
@@ -13,10 +13,10 @@
 
     <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/rank_icon"
         android:title="랭킹" />
     <item
         android:id="@+id/navigation_user"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="사용자" />
+        android:icon="@drawable/setting_icon"
+        android:title="설정" />
 </menu>

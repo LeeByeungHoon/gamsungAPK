@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.hannip.myapplication.databinding.FragmentUserBinding
-import com.hannip.myapplication.ui.module.GetContent1
 
 
 class UserFragment : Fragment()  {
@@ -36,10 +35,7 @@ class UserFragment : Fragment()  {
         }
         return root
     }
-    private fun getContentValue (): String {
-        i++
-        return GetContent1().getContent1Data(i).Content+"\n" + GetContent1().getContent1Data(i).writer
-    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
