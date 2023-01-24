@@ -49,19 +49,35 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginBottom="70dp"
-            android:paddingHorizontal="15dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginVertical="70dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:background="#B3FFFFFF"
+                android:elevation="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <TextView
+                android:text="오늘의 감성"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor = "@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+            <TextView
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingHorizontal="60dp"
                 android:elevation="20dp"
-                android:background="@color/white"
                 android:textColor = "@color/black"
                 android:id="@+id/content"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"/>
+                android:layout_height="100dp"/>
+            </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="20dp"
                 android:paddingHorizontal="10dp"
@@ -81,6 +97,7 @@
                     android:text="넘기기"/>
             </LinearLayout>
             <LinearLayout
+                android:layout_marginHorizontal="10dp"
                 android:background="@drawable/shape"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
@@ -106,6 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="70dp"/>
             <LinearLayout
+                android:layout_marginHorizontal="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -128,79 +146,10 @@
                     android:layout_height="wrap_content"
                     android:text="더 보기"/>
             </LinearLayout>
-            <LinearLayout
-                android:background="@drawable/shape2"
-                android:elevation="5dp"
-                android:layout_marginTop="10dp"
+            <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
-                <TextView
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:text="홍길동"
-                    android:id="@+id/gsWriterNickName1"
-                    android:layout_weight="6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-                <TextView
-                    android:text="홍길동"
-                    android:gravity="center|start"
-                    android:id="@+id/gsWriterIntro1"
-                    android:layout_weight="3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-                <TextView
-                    android:text="홍길동"
-                    android:gravity="center"
-                    android:id="@+id/gsWriterFollower1"
-                    android:layout_weight="6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-            </LinearLayout>
-            <LinearLayout
-                android:background="@drawable/shape2"
-                android:elevation="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-                <TextView
-                    android:id="@+id/gsWriterNickName2"
-                    android:layout_weight="6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-                <TextView
-                    android:id="@+id/gsWriterIntro2"
-                    android:layout_weight="3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-                <TextView
-                    android:id="@+id/gsWriterFollower2"
-                    android:layout_weight="6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-            </LinearLayout>
-            <LinearLayout
-                android:background="@drawable/shape2"
-                android:elevation="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-                <TextView
-                    android:id="@+id/gsWriterNickName3"
-                    android:layout_weight="6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-                <TextView
-                    android:id="@+id/gsWriterIntro3"
-                    android:layout_weight="3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-                <TextView
-                    android:id="@+id/gsWriterFollower3"
-                    android:layout_weight="6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                android:id="@+id/writerTop3List"/>
     </LinearLayout>
         </FrameLayout>
         </ScrollView>
